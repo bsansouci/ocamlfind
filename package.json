@@ -1,0 +1,37 @@
+{
+    "version": "1.6.2",
+    "exportedEnvVars": {
+        "ocamlfind_installed": {
+            "global": true,
+            "globalCollisionBehavior": "clobber",
+            "val": "true"
+        },
+        "PATH": {
+            "global": true,
+            "resolveAsRelativePath": true,
+            "globalCollisionBehavior": "joinPath",
+            "val": "./_build/ocamlfind/bin"
+        },
+        "ocamlfind_enable": {
+            "global": true,
+            "globalCollisionBehavior": "clobber",
+            "val": "enable"
+        },
+        "FINDLIB": {
+            "global": true,
+            "resolveAsRelativePath": true,
+            "globalCollisionBehavior": "joinPath",
+            "val": "./_build/ocamlfind/lib"
+        }
+    },
+    "name": "ocamlfind",
+    "dependencies": {
+        "conf-m4": "https://github.com/npm-opam/conf-m4",
+        "nopam": "https://github.com/yunxing/nopam.git",
+        "ocaml": "https://github.com/npm-opam/ocaml.git#npm-4.02.3",
+        "dependency-env": "https://github.com/npm-ml/dependency-env.git"
+    },
+    "scripts": {
+        "postinstall": "eval $(dependencyEnv) && nopam && ./configure -bindir $opam_bin -sitelib $opam_lib -mandir $opam_man -config $opam_lib/findlib.conf -no-custom -no-topfind && make all && make opt && make install"
+    }
+}
