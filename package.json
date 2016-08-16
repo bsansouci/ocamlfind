@@ -22,6 +22,12 @@
             "resolveAsRelativePath": true,
             "globalCollisionBehavior": "joinPath",
             "val": "./_build/ocamlfind/lib"
+        },
+        "OCAML_TOPLEVEL_PATH": {
+            "val": "./_build/ocamlfind/lib/topfind"
+            "global": true,
+            "resolveAsRelativePath": true,
+            "globalCollisionBehavior": "clobber",       
         }
     },
     "name": "ocamlfind",
