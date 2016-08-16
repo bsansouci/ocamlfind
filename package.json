@@ -27,7 +27,7 @@
             "val": "./_build/ocamlfind/lib/topfind"
             "global": true,
             "resolveAsRelativePath": true,
-            "globalCollisionBehavior": "clobber",       
+            "globalCollisionBehavior": "clobber"     
         }
     },
     "name": "ocamlfind",
