@@ -32,6 +32,6 @@
         "dependency-env": "https://github.com/npm-ml/dependency-env.git"
     },
     "scripts": {
-        "postinstall": "eval $(dependencyEnv) && nopam && ./configure -bindir $opam_bin -sitelib $opam_lib -mandir $opam_man -config $opam_lib/findlib.conf -no-custom && make all && make opt && make install"
+        "postinstall": "eval $(dependencyEnv) && nopam && ./configure -no-camlp4 -bindir $opam_bin -sitelib $opam_lib -mandir $opam_man -config $opam_lib/findlib.conf -no-custom && make all && make opt && make install"
     }
 }
