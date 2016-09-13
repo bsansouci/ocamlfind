@@ -24,7 +24,7 @@
             "val": "./_build/ocamlfind/lib"
         }
     },
-    "name": "ocamlfind",
+    "name": "ocamlfind-actual",
     "dependencies": {
         "conf-m4": "https://github.com/npm-opam/conf-m4",
         "nopam": "https://github.com/yunxing/nopam.git",
