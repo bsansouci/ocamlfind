@@ -26,9 +26,9 @@
     },
     "name": "ocamlfind-actual",
     "dependencies": {
-        "@yunxing-test2/conf-m4": "*",
+        "@opam-alpha/conf-m4": "*",
         "nopam": "https://github.com/yunxing/nopam.git",
-        "@yunxing-test2/ocaml": "4.2.3",
+        "@opam-alpha/ocaml": "4.2.3",
         "dependency-env": "https://github.com/npm-ml/dependency-env.git"
     },
     "scripts": {
