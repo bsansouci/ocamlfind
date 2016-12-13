@@ -27,9 +27,9 @@
     "name": "ocamlfind-actual",
     "dependencies": {
         "@opam-alpha/conf-m4": "*",
-        "nopam": "https://github.com/yunxing/nopam.git",
+        "nopam": "*",
         "@opam-alpha/ocaml": "4.2.3",
-        "dependency-env": "https://github.com/npm-ml/dependency-env.git"
+        "dependency-env": "*"
     },
     "scripts": {
         "postinstall": "eval $(dependencyEnv) && nopam && ./configure -no-camlp4 -bindir $opam_bin -sitelib $opam_lib -mandir $opam_man -config $opam_lib/findlib.conf -no-custom && make all && make opt && make install"
