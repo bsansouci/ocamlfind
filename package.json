@@ -26,8 +26,8 @@
     },
     "name": "ocamlfind",
     "dependencies": {
-        "conf-m4": "https://github.com/npm-opam/conf-m4",
-        "nopam": "https://github.com/yunxing/nopam.git",
-        "dependency-env": "https://github.com/npm-ml/dependency-env.git"
+        "conf-m4": "bsansouci/conf-m4#bsb-support",
+        "nopam": "yunxing/nopam",
+        "dependency-env": "npm-ml/dependency-env"
     }
 }
