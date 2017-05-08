@@ -1,0 +1,5 @@
+{
+  "name": "ocamlfind",
+  "sources": "fake_src",
+  "build_script": "eval $(dependencyEnv) && nopam && ./configure -no-camlp4 -bindir $opam_bin -sitelib $opam_lib -mandir $opam_man -config $opam_lib/findlib.conf -no-custom && make all && make opt && make install"
+}
