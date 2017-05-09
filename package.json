@@ -28,6 +28,7 @@
     "dependencies": {
         "conf-m4": "bsansouci/conf-m4#bsb-support",
         "nopam": "yunxing/nopam",
-        "dependency-env": "npm-ml/dependency-env"
+        "dependency-env": "npm-ml/dependency-env",
+        "ocaml": "npm-opam/ocaml#npm-4.02.3"
     }
 }
